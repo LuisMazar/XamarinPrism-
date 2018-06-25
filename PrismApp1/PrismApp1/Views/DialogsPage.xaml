@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="PrismApp1.Views.DialogsPage">
+    
+    <StackLayout>
+        <Button Text="Show traditional alert"
+                Command="{Binding ShowTraditional}" />
+        <Entry Placeholder="Millisecons"
+               Text="{Binding Millis}"/>
+        <Button Text="Show alert"
+                Command="{Binding ShowAlert}"/>
+        <Button Text="Show toast"
+                Command="{Binding ShowToast}"/>
+        <Button Text="Show error"
+                Command="{Binding ShowError}"/>
+        <Button Text="Show success"
+                Command="{Binding ShowSuccess}"/>
+        <Button Text="Show progress"
+                Command="{Binding ShowProgress}"/>
+    </StackLayout>
+  
+</ContentPage>
